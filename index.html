@@ -13,27 +13,29 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <h1>Agenda de Contatos</h1>
     <div class="container">
-        <form id="contatoForm">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-            <br>
-            <label for="telefone">Telefone:</label>
-            <input type="text" id="telefone" name="telefone">
-            <br>
-            <button type="button" onclick="adicionarContato()">Cadastrar</button>
-        </form>
-        <table id="tabelaContatos">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Telefone</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+            <h1>Agenda de Contatos</h1>
+            <form id="contatoForm">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required> 
+                </div>
+                <button type="submit">Cadastrar</button> 
+            </form>
+            <table id="tabelaContatos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
         <script src="main.js"></script>
     </div>
 </body>
